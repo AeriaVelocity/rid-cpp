@@ -2,10 +2,11 @@
 
 This document shows the original `Program.cs` from the .NET version of `rid`.
 It's here for reference purposes. For future reference it'll be left here and not deleted.
+
+```csharp
 using System;
 using System.Security.Principal;
 
-```csharp
 namespace rid
 {
     class Program
