@@ -11,9 +11,9 @@ Simply type the following into your terminal:
 ```
 g++ -o ./rid.o ./main.c
 ```
-[Add `rid.o` to your system's `%PATH`](https://www.cyberciti.biz/faq/unix-linux-adding-path/), then run `rid` from the terminal.
+[Add `rid.o` to your system's `$PATH`](https://www.cyberciti.biz/faq/unix-linux-adding-path/), then run `rid` from the terminal.
 
-You can skip adding to `%PATH`, but you then have to specify where `rid` is.
+You can skip adding to `$PATH`, but you then have to specify where `rid` is.
 ### Windows systems
 You need to have [MinGW](http://mingw.org/) installed and [added to your system's PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
 Type the following into your command prompt:
