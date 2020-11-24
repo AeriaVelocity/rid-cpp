@@ -2,6 +2,11 @@
 #include <cstdlib>
 using namespace std;
 
+/*
+I haven't tested if any of this works. I'll try to check when I get the chance.
+At the very least the switch-case statement should work.
+*/
+
 int main()
 {
     int max;
