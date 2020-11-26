@@ -37,3 +37,5 @@ You can skip adding to PATH, but you then have to specify where `rid.exe` is.
   - Then you'd have to type `main` to run the program.
 - **Then why even call it `rid`?**
   - Because that was the *original* project name, as a play on words for 'dir'.
+- **Why not just recompile the .NET version for .NET Core?**
+  - .NET Core is reliant on having a DLL next to the executable at all times, which may be fine for bigger projects, but not ideal for a small project like this. Besides, I needed to brush up on my C++.
