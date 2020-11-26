@@ -1,25 +1,21 @@
 #include <iostream>
-#include <cstdlib>
-#include <string>
-#include <time.h>
+#include <cstdlib> 
+#include <time.h> 
 using namespace std;
 
 /*
-I haven't tested if any of this works. I'll try to check when I get the chance.
-At the very least the switch-case statement should work.
-UPDATE -- tested, the code compiles and runs perfectly. I'll leave this comment here
-for future reference.
-UPDATE 2 -- Apparently I didn't import time.h correctly.
-That's now been fixed and the code properly compiles on Windows with MinGW and I assume it'll compile on other OSes.
+-- UPDATE --
+Less important to the overall program, but I fixed a thing where the "dieroll" variable used the "max" variable instead of the "diemax" variable.
+Also I got rid of the previous updates (they would have taken up too much space)
 */
 
 int main()
 {
     int max,diemax,dieroll;
-    max = 11;
-    diemax = 5;
-    dieroll = rand()%diemax;
-    srand(time(0));
+    max = 11; // used for the maximum amount of messages -- is zero-indexed
+    diemax = 5; // used for the below dieroll variable -- zero-indexed
+    dieroll = rand()%diemax; // used for the "Let's roll a die!" message
+    srand(time(0)); // RNG seeding (no idea what that is)
     switch (rand()%max)
     {
         case 0:
@@ -57,6 +53,9 @@ int main()
             break;
         case 11:
             cout << "Congratulations! You found an ultra-rare nothing!" << endl;
+            break;
+        default:
+            // this has never happened and it shouldn't happen, but it's apparently good practice to put this here anyway
             break;
     }
     return 0;
