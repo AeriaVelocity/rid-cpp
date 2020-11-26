@@ -18,7 +18,7 @@ int main()
     int max,diemax,dieroll;
     max = 11;
     diemax = 5;
-    dieroll = rand()%max;
+    dieroll = rand()%diemax;
     srand(time(0));
     switch (rand()%max)
     {
@@ -47,7 +47,7 @@ int main()
             cout << "I'm sure you meant 'dir' but I'm just gonna let it slide." << endl;
             break;
         case 8:
-            cout << "Let's roll a die! It's " << dieroll << "!" << endl;
+            cout << "Let's roll a die! It's " << dieroll+1 << "!" << endl;
             break;
         case 9:
             cout << "You're lucky I don't smack you for being a bad typer." << endl;
