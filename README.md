@@ -9,7 +9,7 @@ Compiled binaries for this version of `rid` will not be provided -- you are enco
 ### macOS and Linux
 Simply type the following into your terminal:
 ```
-g++ -o rid main.c
+g++ -o rid main.cpp
 ```
 Copy the compiled `rid` program to your `usr/local/bin/` directory. (if root then leave `sudo` out)
 ```shell
@@ -26,7 +26,7 @@ export PATH = /path/to/rid:$PATH
 You need to have [MinGW](http://mingw.org/) installed and [added to your system's PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
 Type the following into your command prompt:
 ```
-g++ -o ./rid.exe ./main.c
+g++ -o ./rid.exe ./main.cpp
 ```
 Either place `rid.exe` in `C:\Windows\System32` or place it wherever and add it to your system's PATH, then you can run `rid` straight from the command prompt.
 
