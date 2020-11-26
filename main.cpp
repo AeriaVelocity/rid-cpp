@@ -1,13 +1,12 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
-#include <time>
+#include <time.h>
 using namespace std;
 
 /*
 I haven't tested if any of this works. I'll try to check when I get the chance.
 At the very least the switch-case statement should work.
-
 UPDATE -- tested, the code compiles and runs perfectly. I'll leave this comment here
 for future reference.
 */
