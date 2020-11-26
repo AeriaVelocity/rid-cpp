@@ -9,6 +9,8 @@ I haven't tested if any of this works. I'll try to check when I get the chance.
 At the very least the switch-case statement should work.
 UPDATE -- tested, the code compiles and runs perfectly. I'll leave this comment here
 for future reference.
+UPDATE 2 -- Apparently I didn't import time.h correctly.
+That's now been fixed and the code properly compiles on Windows with MinGW and I assume it'll compile on other OSes.
 */
 
 int main()
