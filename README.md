@@ -16,6 +16,7 @@ Copy the compiled `rid` program to your `usr/local/bin/` directory. (if root the
 sudo cp ./rid /usr/local/bin/
 ```
 After that, run `rid` from the terminal.
+#### Non-root instructions
 If you lack privileges to write to `usr/local/bin/` (i.e. you're not elevated or cannot be elevated) then copy `rid` to any directory and add that directory to your PATH:
 ```
 export PATH = /path/to/rid:$PATH
@@ -26,11 +27,14 @@ export PATH = /path/to/rid:$PATH
 You need to have [MinGW](http://mingw.org/) installed and [added to your system's PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
 Type the following into your command prompt:
 ```
-g++ -o ./rid.exe ./main.cpp
+g++ -o .\rid.exe .\main.cpp
 ```
 Either place `rid.exe` in `C:\Windows\System32` or place it wherever and add it to your system's PATH, then you can run `rid` straight from the command prompt.
 
 You can skip adding to PATH, but you then have to specify where `rid.exe` is.
+#### Using Cygwin
+[Cygwin] will work with its own GCC/G++ package, but the `rid.exe` produced from that will refuse to run on standard Windows and requires Cygwin to run. Cygwin can run both standard Windows and Cygwin-only executables, so it's better to just compile using MinGW.
+
 
 ## Questions and Concerns
 - **What'll happen if I compile the code to something else, like `main`?**
