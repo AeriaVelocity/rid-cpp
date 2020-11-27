@@ -35,6 +35,7 @@ You can skip adding to PATH, but you then have to specify where `rid.exe` is.
 #### Using Cygwin
 [Cygwin](https://www.cygwin.com/) will work with its own GCC/G++ package, but the `rid.exe` produced from that will refuse to run on standard Windows and requires Cygwin to run. Cygwin can run both standard Windows and Cygwin-only executables, so it's better to just compile using MinGW.
 
+If you DO decide to compile with Cygwin, follow the [macOS and Linux instructions](https://github.com/SpeedStriker243/rid-cpp#macos-and-linux).
 
 ## Questions and Concerns
 - **What'll happen if I compile the code to something else, like `main`?**
