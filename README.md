@@ -12,7 +12,7 @@ Simply type the following into your terminal:
 g++ -o rid main.cpp
 ```
 Copy the compiled `rid` program to your `usr/local/bin/` directory. (if root then leave `sudo` out)
-```shell
+```
 sudo cp ./rid /usr/local/bin/
 ```
 After that, run `rid` from the terminal.
