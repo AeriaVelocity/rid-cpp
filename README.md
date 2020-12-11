@@ -32,6 +32,11 @@ g++ -o .\rid.exe .\main.cpp
 Either place `rid.exe` in `C:\Windows\System32` or place it wherever and add it to your system's PATH, then you can run `rid` straight from the command prompt.
 
 You can skip adding to PATH, but you then have to specify where `rid.exe` is.
+
+If you intend to use `rid` on a different PC that does not have MinGW installed, add this to the end of the `g++` command:
+```
+-static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lpthread -Wl,-Bdynamic
+```
 #### Using Cygwin
 [Cygwin](https://www.cygwin.com/) will work with its own GCC/G++ package, but the `rid.exe` produced from that will refuse to run on standard Windows and requires Cygwin to run. Cygwin can run both standard Windows and Cygwin-only executables, so it's better to just compile using MinGW.
 
